@@ -56,6 +56,7 @@ cd build/tizen
 
 %files
 %defattr(-,root,root,-)
-%{dali_app_ro_dir}/images/*
-%{dali_app_ro_dir}/models/*
+%{dali_app_ro_dir}/images/pbr/*
+%{dali_app_ro_dir}/models/pbr/*
+%{dali_app_ro_dir}/shaders/pbr/*
 %license LICENSE
