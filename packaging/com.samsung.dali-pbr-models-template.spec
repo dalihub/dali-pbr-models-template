@@ -12,9 +12,7 @@ Source0:    %{name}-%{version}.tar.gz
 BuildRequires:  cmake
 
 #need libtzplatform-config for directory if tizen version is 3.x
-%if "%{tizen_version_major}" == "3"
 BuildRequires:  pkgconfig(libtzplatform-config)
-%endif
 
 %description
 Models for the PBR demo
@@ -26,12 +24,9 @@ Models for the PBR demo
 %setup -q
 
 #Use TZ_PATH when tizen version is 3.x
+%define dali_app_ro_dir       %TZ_SYS_RO_APP/com.samsung.dali-demo
 
-%if "%{tizen_version_major}" == "2"
-%define dali_app_ro_dir       /usr/apps/com.samsung.dali-demo/
-%else
-%define dali_app_ro_dir       %TZ_SYS_RO_APP/com.samsung.dali-demo/
-%endif
+%define smack_rule_dir        %TZ_SYS_SMACK/accesses2.d/
 
 ##############################
 # Build
@@ -40,7 +35,7 @@ Models for the PBR demo
 
 cd %{_builddir}/%{name}-%{version}/build/tizen
 
-cmake -DDALI_APP_DIR=%{dali_app_ro_dir}
+cmake -DDALI_APP_RES_DIR=%{dali_app_ro_dir}
 
 ##############################
 # Installation
@@ -48,15 +43,28 @@ cmake -DDALI_APP_DIR=%{dali_app_ro_dir}
 %install
 rm -rf %{buildroot}
 cd build/tizen
-%make_install DALI_APP_DIR=%{dali_app_ro_dir}
+%make_install DALI_APP_RES_DIR=%{dali_app_ro_dir}
+
+%if 0%{?enable_dali_smack_rules} && !%{with wayland}
+mkdir -p %{buildroot}%{smack_rule_dir}
+cp -f %{_builddir}/%{name}-%{version}/%{name}.rule %{buildroot}%{smack_rule_dir}
+%endif
 
 ##############################
 # Files in Binary Packages
 ##############################
 
 %files
+%if 0%{?enable_dali_smack_rules}
+%manifest %{name}.manifest-smack
+%else
+%manifest %{name}.manifest
+%endif
 %defattr(-,root,root,-)
-%{dali_app_ro_dir}/images/pbr/*
-%{dali_app_ro_dir}/models/pbr/*
-%{dali_app_ro_dir}/shaders/pbr/*
+%{dali_app_ro_dir}/images/*
+%{dali_app_ro_dir}/models/*
+%{dali_app_ro_dir}/shaders/*
 %license LICENSE
+%if 0%{?enable_dali_smack_rules} && !%{with wayland}
+%config %{smack_rule_dir}/%{name}.rule
+%endif
