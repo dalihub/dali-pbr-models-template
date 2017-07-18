@@ -61,9 +61,9 @@ cp -f %{_builddir}/%{name}-%{version}/%{name}.rule %{buildroot}%{smack_rule_dir}
 %manifest %{name}.manifest
 %endif
 %defattr(-,root,root,-)
-%{dali_app_ro_dir}/images/*
-%{dali_app_ro_dir}/models/*
-%{dali_app_ro_dir}/shaders/*
+%{dali_app_ro_dir}/images/pbr/*
+%{dali_app_ro_dir}/models/pbr/*
+%{dali_app_ro_dir}/shaders/pbr/*
 %license LICENSE
 %if 0%{?enable_dali_smack_rules} && !%{with wayland}
 %config %{smack_rule_dir}/%{name}.rule
