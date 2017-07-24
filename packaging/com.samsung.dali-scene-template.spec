@@ -1,12 +1,12 @@
 %bcond_with wayland
 
-Name:       com.samsung.dali-pbr-models-template
-Summary:    PBR models.
+Name:       com.samsung.dali-scene-template
+Summary:    Scenes for DALi demo.
 Version:    1.0.0
 Release:    1
-Group:      PBR models for DALi demo
+Group:      Scenes for DALi demo
 License:    Apache-2.0
-URL:        https://github.com/dalihub/dali-pbr-models-template
+URL:        https://github.com/dalihub/dali-scene-template
 Source0:    %{name}-%{version}.tar.gz
 
 BuildRequires:  cmake
@@ -15,7 +15,7 @@ BuildRequires:  cmake
 BuildRequires:  pkgconfig(libtzplatform-config)
 
 %description
-Models for the PBR demo
+Scenes for DALi demo
 
 ##############################
 # Preparation
@@ -61,9 +61,9 @@ cp -f %{_builddir}/%{name}-%{version}/%{name}.rule %{buildroot}%{smack_rule_dir}
 %manifest %{name}.manifest
 %endif
 %defattr(-,root,root,-)
-%{dali_app_ro_dir}/images/pbr/*
-%{dali_app_ro_dir}/models/pbr/*
-%{dali_app_ro_dir}/shaders/pbr/*
+%{dali_app_ro_dir}/images/scenes/*
+%{dali_app_ro_dir}/models/scenes/*
+%{dali_app_ro_dir}/shaders/scenes/*
 %license LICENSE
 %if 0%{?enable_dali_smack_rules} && !%{with wayland}
 %config %{smack_rule_dir}/%{name}.rule
