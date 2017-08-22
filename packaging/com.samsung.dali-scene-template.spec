@@ -24,7 +24,7 @@ Template scene for DALi scene launcher. This template can be used to create a 3D
 %setup -q
 
 #Use TZ_PATH when tizen version is 3.x
-%define dali_app_ro_dir       %TZ_SYS_RO_APP/com.samsung.dali-scene-launcher
+%define dali_app_ro_dir       %TZ_SYS_RO_APP/com.samsung.dali-scene-launcher/resources
 
 %define smack_rule_dir        %TZ_SYS_SMACK/accesses2.d/
 

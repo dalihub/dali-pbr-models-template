@@ -7,7 +7,7 @@ SET(PREFIX ${CMAKE_INSTALL_PREFIX})
 IF(DEFINED DALI_APP_RES_DIR)
         SET(APP_DATA_RES_DIR ${DALI_APP_RES_DIR})
 ELSE()
-        SET(APP_DATA_RES_DIR ${PREFIX}/share/com.samsung.dali-scene-launcher/res)
+        SET(APP_DATA_RES_DIR ${PREFIX}/share/com.samsung.dali-scene-launcher/resources)
 ENDIF()
 
 SET(RESOURCE_DIR ${ROOT_SRC_DIR}/resources)
