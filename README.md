@@ -28,6 +28,7 @@ Template to add scenes to DALi scene launcher.
 
     At the present time a file with .dalipbr extension needs to be created with a file editor in the ./resources/models/scenes/ directory. It's a file with json format and describes where to find the different assets. Below is an example of the file's content.
 
+    <pre>
     ///////////////////////////////////////////////
     /*
      * Copyright (c) 2017 Samsung Electronics Co., Ltd.
@@ -45,7 +46,8 @@ Template to add scenes to DALi scene launcher.
      * limitations under the License.
      *
      */
-
+    </pre>
+    <pre>
     {
       "models":
       [
@@ -67,6 +69,7 @@ Template to add scenes to DALi scene launcher.
       ]
     }
     ///////////////////////////////////////////////
+    </pre>
 
 * Build
 
