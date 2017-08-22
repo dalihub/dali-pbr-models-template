@@ -1,13 +1,13 @@
-# dali-scenes-template
+# dali-scene-template
 Template to add scenes to DALi scene launcher.
 
-Step 1) Clone a project template
+* Clone a project template
 
     A project template can be cloned from https://github.com/dalihub/dali-scene-template.git
 
         $ git clone https://github.com/dalihub/dali-scene-template.git
 
-Step 2) Rename the project
+* Rename the project
 
     Rename the files
     com.samsung.dali-scene-template.manifest
@@ -18,7 +18,7 @@ Step 2) Rename the project
     com.samsung.dali-scene-template.spec
     Edit the packaging file and update the project's name.
 
-Step 3) Copy resources
+* Copy resources
 
     Copy the texture assets into the folder ./resources/images/scenes/
 
@@ -68,7 +68,7 @@ Step 3) Copy resources
     }
     ///////////////////////////////////////////////
 
-Step 4) Build
+* Build
 
     To build on Desktop just build like dali-scene-launcher
 
