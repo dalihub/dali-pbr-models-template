@@ -1,10 +1,10 @@
 %bcond_with wayland
 
 Name:       com.samsung.dali-scene-template
-Summary:    Scenes for DALi demo.
+Summary:    Template scene for DALi scene launcher.
 Version:    1.0.0
 Release:    1
-Group:      Scenes for DALi demo
+Group:      Scenes for DALi scene launcher
 License:    Apache-2.0
 URL:        https://github.com/dalihub/dali-scene-template
 Source0:    %{name}-%{version}.tar.gz
@@ -15,7 +15,7 @@ BuildRequires:  cmake
 BuildRequires:  pkgconfig(libtzplatform-config)
 
 %description
-Scenes for DALi demo
+Template scene for DALi scene launcher. This template can be used to create a 3D scene for the DALi scene launcher application. See the README.md file for more details.
 
 ##############################
 # Preparation
@@ -24,7 +24,7 @@ Scenes for DALi demo
 %setup -q
 
 #Use TZ_PATH when tizen version is 3.x
-%define dali_app_ro_dir       %TZ_SYS_RO_APP/com.samsung.dali-demo
+%define dali_app_ro_dir       %TZ_SYS_RO_APP/com.samsung.dali-scene-launcher
 
 %define smack_rule_dir        %TZ_SYS_SMACK/accesses2.d/
 

@@ -1,5 +1,5 @@
 # dali-scenes-template
-Template to add scenes to DALi demo.
+Template to add scenes to DALi scene launcher.
 
 Step 1) Clone a project template
 
@@ -70,7 +70,7 @@ Step 3) Copy resources
 
 Step 4) Build
 
-    To build on Desktop just build like dali-demo
+    To build on Desktop just build like dali-scene-launcher
 
         $ source setenv
 
@@ -84,7 +84,7 @@ Step 4) Build
 
 
 
-    To build for device use a gbs command line similar to the one used to build dali-demo
+    To build for device use a gbs command line similar to the one used to build dali-scene-launcher
 
         $ gbs -c [path to the .gbs.conf file] build -A armv7l -P [profile] -B [path to the destination folder]
 
