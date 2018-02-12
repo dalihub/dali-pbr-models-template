@@ -1,10 +1,10 @@
 %bcond_with wayland
 
-Name:       com.samsung.dali-scene-template
-Summary:    Template scene for DALi scene launcher.
+Name:       com.samsung.hello-dali-template
+Summary:    Template hello-dali scene for DALi scene launcher.
 Version:    1.0.0
 Release:    1
-Group:      Scenes for DALi scene launcher
+Group:      Template scenes for DALi scene launcher
 License:    Apache-2.0
 URL:        https://github.com/dalihub/dali-scene-template
 Source0:    %{name}-%{version}.tar.gz
