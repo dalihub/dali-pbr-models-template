@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d9709c74_ff6cd424",
+        "filename": "resources/watchface/models/scenes/watchface.dli",
+        "patchSetId": 3
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 1012754
+      },
+      "writtenOn": "2018-02-13T11:53:30Z",
+      "side": 1,
+      "message": "Not sure if I have the right idea / expectation; I\u0027ll share it here anyway in the hope that it\u0027s useful.\n\nIn my mind the .dli (as GLTF / pure-ish scene description ...plus animations) had no awareness of and dependency on, the .lua that was adding the logic to it, i.e. the dependency was only one way.\n\nThis has some practical advantages e.g. 1, still being able to load the scene without a script, 2, if the script name was to change, it only needed to be updated in a single place (.dalipbr).\n\nThe lua then defines the data provider (and whatever other) events, e.g. OnHour0_11Minute, OnMinuteSecond, OnKey, OnTilt etc., applying [data] transformations to nodes, referring to them by their name / ID.\n\nThough I haven\u0027t thought it all the way through, this feels like it\u0027d also help make the need for C++ side event / action management pretty light.",
+      "range": {
+        "startLine": 82,
+        "startChar": 0,
+        "endLine": 85,
+        "endChar": 5
+      },
+      "revId": "d02d3a8035597daff425f69900850763b2418c9c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3cdee50c_a2620bfc",
+        "filename": "resources/watchface/models/scenes/watchface.dli",
+        "patchSetId": 3
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1012754
+      },
+      "writtenOn": "2018-02-13T11:53:30Z",
+      "side": 1,
+      "message": "An alternative (which doesn\u0027t eliminate the mutual dependency) is a more Unity-esque way:\n\nThe nodes could define a script component (lua filename), referring to a script that in turn can define the events (OnKey, OnMinuteSecond etc.) that it\u0027s listening to and the transformations it would apply to the given node (and children / parents that it could access by name / id).",
+      "revId": "d02d3a8035597daff425f69900850763b2418c9c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
