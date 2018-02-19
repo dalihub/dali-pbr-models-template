@@ -1,0 +1,46 @@
+{
+  "asset" : { "version" : "1.0" },
+  "scene" : 0,
+  "scenes" : [ { "nodes" : [ 0 ] } ],
+  "nodes" : [
+    {
+      "name": "Hello-DALi",
+      "material": 0,
+      "mesh": 0,
+      "position": [ 0.0, 0.0, -0.2]
+    }
+  ],
+  "meshes" : [
+    {
+      "uri": "quad"
+    }
+  ],
+  "cameras" : [
+    {
+      "fov": 59.9999,
+      "orthographic": [-0.5, 0.5, 0.5, -0.5],
+      "near": 0.1,
+      "far": 1000,
+      "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+    }
+  ],
+  "materials" : [
+    {
+      "texture1": "scenes/dali-logo.png",
+      "mipmap": false
+    }
+  ],
+  "environment" : [
+    {
+    }
+  ],
+  "shaders" : [
+    {
+      "vertex": "scenes/default_image_display.vsh",
+      "fragment": "scenes/default_image_display.fsh",
+      "renderMode":1,
+      "uTilt": [ 0.0, 0.0 ],
+      "uCubeMatrix": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ]
+    }
+  ]
+}
