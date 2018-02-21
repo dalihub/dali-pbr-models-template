@@ -1,5 +1,5 @@
-# dali-scene-hellodali
-A hello world like scene for DALi scene launcher.
+# dali-scene-template
+Template scenes for DALi scene launcher.
 
 * Build
 
@@ -7,7 +7,7 @@ A hello world like scene for DALi scene launcher.
 
         $ source setenv
 
-        $ cd hellodali/build/tizen
+        $ cd 'template'/build/tizen                     # 'template' can be hellodali or watchface
 
         $ cmake -DCMAKE_INSTALL_PREFIX=$DESKTOP_PREFIX
 
