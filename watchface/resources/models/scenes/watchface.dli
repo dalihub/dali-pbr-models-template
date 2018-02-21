@@ -1,0 +1,81 @@
+{
+  "asset" : { "version" : "1.0" },
+  "scene" : 0,
+  "scenes" : [ { "nodes" : [ 0 ] } ],
+  "nodes" : [
+    {
+      "name": "Watchface",
+      "matrix": [1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0],
+      "children": [ 4, 3, 2, 1 ]
+    },
+    {
+      "name": "Watch_Dial",
+      "material": 0,
+      "mesh": 0,
+      "position": [ 0.0, 0.0, -0.2]
+    },
+    {
+      "name": "Hand_Seconds",
+      "material": 1,
+      "mesh": 0,
+      "position": [ 0.0, 0.0, -0.3]
+    },
+    {
+      "name": "Hand_Minutes",
+      "material": 2,
+      "mesh": 0,
+      "position": [ 0.0, 0.0, -0.4]
+    },
+    {
+      "name": "Hand_Hours",
+      "material": 3,
+      "mesh": 0,
+      "position": [ 0.0, 0.0, -0.5]
+    }
+  ],
+  "meshes" : [
+    {
+      "uri": "quad"
+    }
+  ],
+  "cameras" : [
+    {
+      "fov": 59.9999,
+      "orthographic": [-0.5, 0.5, 0.5, -0.5],
+      "near": 0.1,
+      "far": 1000,
+      "matrix": [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]
+    }
+  ],
+  "materials" : [
+    {
+      "texture1": "scenes/watch_dial.png",
+      "mipmap": false
+    },
+    {
+      "texture1": "scenes/hand_second.png",
+      "mipmap": false
+    },
+    {
+      "texture1": "scenes/hand_minute.png",
+      "mipmap": false
+    },
+    {
+      "texture1": "scenes/hand_hour.png",
+      "mipmap": false
+    }
+  ],
+  "environment" : [
+    {
+    }
+  ],
+  "shaders" : [
+    {
+      "vertex": "scenes/default_image_display.vsh",
+      "fragment": "scenes/default_image_display.fsh",
+      "renderMode":1,
+      "uTilt": [ 0.0, 0.0 ],
+      "uCubeMatrix": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ]
+    }
+  ]
+}

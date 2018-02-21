@@ -7,7 +7,7 @@ Template scenes for DALi scene launcher.
 
         $ source setenv
 
-        $ cd 'template'/build/tizen
+        $ cd 'template'/build/tizen                     # Where 'template' can be hellodali or watchface.
 
         $ cmake -DCMAKE_INSTALL_PREFIX=$DESKTOP_PREFIX
 
