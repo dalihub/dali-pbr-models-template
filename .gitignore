@@ -1,0 +1,5 @@
+*.cmake
+hellodali/build/tizen/CMakeFiles/*
+CMakeCache.txt
+Makefile
+install_manifest.txt
