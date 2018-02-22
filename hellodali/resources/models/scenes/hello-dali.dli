@@ -42,5 +42,11 @@
       "uTilt": [ 0.0, 0.0 ],
       "uCubeMatrix": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ]
     }
+  ],
+
+  "scripts" : [
+    {
+      "url" : "hellodali.lua"
+    }
   ]
 }
