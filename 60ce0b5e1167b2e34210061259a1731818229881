@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2db9716f_cf88a1b9",
+        "filename": "watchface/com.samsung.dali-scene-watchface.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1012754
+      },
+      "writtenOn": "2018-02-22T10:41:21Z",
+      "side": 1,
+      "message": "nitpick: I wonder if it\u0027d be worth reflecting the fact that this is a template, in the bundle Ids?",
+      "range": {
+        "startLine": 2,
+        "startChar": 74,
+        "endLine": 2,
+        "endChar": 106
+      },
+      "revId": "60ce0b5e1167b2e34210061259a1731818229881",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
