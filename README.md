@@ -24,4 +24,13 @@ Template scenes for DALi scene launcher.
     The rpm package is generated and can be installed on target.
 
 
+* Tools
+
+    The mktemplate.sh tool is provided for creating a copy of the hellodali template with the chosen project name and bundle ID.
+
+    Usage:
+
+        $ mktemplate.sh \[project name] \[bundle id] \[working directory]
+
+    The working directory parameter is optional and will default to the root of this repository, i.e. the build script will be generated in ../packaging, and the project is created at the same level as hellodali.
 
