@@ -16,6 +16,24 @@
       "revId": "4b9ec145f2243b66370a675a249c7d1afad8302a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b08afc00_c08bba6b",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1012754
+      },
+      "writtenOn": "2018-03-01T15:55:28Z",
+      "side": 1,
+      "message": "I\u0027m usually going with com.samsung.dali_scene_template.mytemplatename (locally), if that helps.\n\nIn an ideal world there should be no dashes in package names (convention: https://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html) -- however I\u0027m not sure where exactly it is being enforced and how relevant it is to Tizen.",
+      "parentUuid": "fabdad04_faa98694",
+      "revId": "4b9ec145f2243b66370a675a249c7d1afad8302a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
