@@ -1,0 +1,14 @@
+<manifest>
+	<define>
+		<domain name="com.samsung.dali-scene-mechanical" />
+		<request>
+			<smack request="dali" type="rwxat" />
+		</request>
+	</define>
+	<assign>
+		<filesystem path="/usr/share/icons/com.samsung.dali-scene-mechanical.png" label="_" />
+	</assign>
+	<request>
+		<domain name="com.samsung.dali-scene-mechanical" />
+	</request>
+</manifest>
