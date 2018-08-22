@@ -49,19 +49,19 @@
   ],
   "materials" : [
     {
-      "texture1": "scenes/watch_dial.png",
+      "texture1": "watch_dial.png",
       "mipmap": false
     },
     {
-      "texture1": "scenes/hand_second.png",
+      "texture1": "hand_second.png",
       "mipmap": false
     },
     {
-      "texture1": "scenes/hand_minute.png",
+      "texture1": "hand_minute.png",
       "mipmap": false
     },
     {
-      "texture1": "scenes/hand_hour.png",
+      "texture1": "hand_hour.png",
       "mipmap": false
     }
   ],
@@ -71,8 +71,8 @@
   ],
   "shaders" : [
     {
-      "vertex": "scenes/default_image_display.vsh",
-      "fragment": "scenes/default_image_display.fsh",
+      "vertex": "default_image_display.vsh",
+      "fragment": "default_image_display.fsh",
       "renderMode":1,
       "uTilt": [ 0.0, 0.0 ],
       "uCubeMatrix": [ 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 ]
