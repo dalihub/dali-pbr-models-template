@@ -92,9 +92,10 @@ cp -f %{_builddir}/%{name}-%{version}/%{model_template_name}/%{name}.xml %{build
 %manifest %{model_template_name}/%{name}.manifest
 %endif
 %defattr(-,root,root,-)
-%{dali_app_res_dir}/images/scenes/*
-%{dali_app_res_dir}/models/scenes/*
-%{dali_app_res_dir}/shaders/scenes/*
+%{dali_app_res_dir}/environments/*
+%{dali_app_res_dir}/images/*
+%{dali_app_res_dir}/models/*
+%{dali_app_res_dir}/shaders/*
 %{dali_app_exe_dir}/*
 %{dali_xml_file_dir}/%{name}.xml
 %{dali_icon_dir}/*
