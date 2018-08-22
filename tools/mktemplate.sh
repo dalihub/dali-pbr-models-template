@@ -77,7 +77,7 @@ ICON_PATH=$WORKING_PATH/$TARGET_NAME/share/icons
 mv $ICON_PATH/$SOURCE_BUNDLE.png $ICON_PATH/$TARGET_BUNDLE.png
 
 # Rename .dli just to be pedantic
-MODELS_PATH=$WORKING_PATH/$TARGET_NAME/resources/models/scenes
+MODELS_PATH=$WORKING_PATH/$TARGET_NAME/resources/models
 mv $MODELS_PATH/hello-dali.dli $MODELS_PATH/$TARGET_NAME.dli
 
 echo "Done."
